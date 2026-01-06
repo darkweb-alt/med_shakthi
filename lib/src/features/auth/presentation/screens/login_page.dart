@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:med_shakthi/src/features/dashboard/home/pharmacy_home_screen.dart';
+import 'package:med_shakthi/src/features/products/presentation/screens/pharmacy_home_screen.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
