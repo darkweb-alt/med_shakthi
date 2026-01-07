@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:med_shakthi/src/features/cart/cart_page.dart';
-import 'package:med_shakthi/src/product/product_page.dart';
+import 'package:med_shakthi/src/features/cart/presentation/screens/cart_page.dart';
+import 'package:med_shakthi/src/features/products/presentation/screens/product_page.dart';
 
 /// This screen implements the "med Shakti home page "
 class PharmacyHomeScreen extends StatefulWidget {
