@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'chat_screen.dart';
-import 'order_screen.dart';
+import 'package:med_shakthi/src/features/orders/chat_screen.dart';
+import 'models/order_item_model.dart';
 
 
 class OrderDetailScreen extends StatelessWidget {

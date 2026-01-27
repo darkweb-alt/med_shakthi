@@ -1,11 +1,11 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:med_shakthi/src/features/checkout/presentation/screens/AddressStore.dart';
+import 'package:med_shakthi/src/features/profile/presentation/screens/settings_page.dart';
 import 'package:provider/provider.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:med_shakthi/src/features/auth/presentation/screens/login_page.dart';
-import 'settings_page.dart';
+import 'package:med_shakthi/src/features/checkout/presentation/screens/AddressStore.dart';
 
 class AccountPage extends StatefulWidget {
   const AccountPage({super.key});
@@ -156,7 +156,6 @@ class _AccountPageState extends State<AccountPage> {
       appBar: AppBar(
         elevation: 0,
         centerTitle: true,
-        automaticallyImplyLeading: false,
         title: const Text("Account", style: TextStyle(color: Colors.black)),
         backgroundColor: Colors.white,
         iconTheme: const IconThemeData(color: Colors.black),
@@ -309,7 +308,7 @@ class _AccountPageState extends State<AccountPage> {
                                     return ListTile(
                                       contentPadding: EdgeInsets.zero,
                                       title: Text(
-                                        "Order #${o['id'].toString().length > 6 ? o['id'].toString().substring(0, 6) : o['id']}",
+                                        "Order #${o['id'].toString().substring(0, 6)}",
                                         style: const TextStyle(
                                           fontWeight: FontWeight.bold,
                                         ),
